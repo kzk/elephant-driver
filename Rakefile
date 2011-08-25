@@ -13,6 +13,7 @@ begin
     gemspec.has_rdoc = false
     gemspec.require_paths = ["lib"]
     gemspec.add_dependency "thrift", "~> 0.7.0"
+    gemspec.add_dependency "nokogiri", ">= 1.5.0"
     gemspec.test_files = Dir["test/**/*.rb", "test/**/*.sh"]
     gemspec.files = Dir["bin/**/*", "lib/**/*", "test/**/*.rb"]
     gemspec.executables = []

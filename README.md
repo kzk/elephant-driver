@@ -15,7 +15,14 @@ Currently, only communicating with JobTracker is supported. Other daemons (TaskT
 
 This library assumes that you're using CDH3 (Cloudera Distribution for Hadoop, version 3).
 
-You first need to install 'hue-plugins' package at the JobTracker node. Then, the following settings needs to be included in your mapred-site.xml.
+You first need to install 'hue-plugins' package at the JobTracker node.
+
+```bash
+$ apt-get install hue-plugins
+$ yum install hue-plugins
+```
+
+Then, the following settings need to be included in your mapred-site.xml.
 
 ```xml
 <!-- Enable Hue plugins -->
